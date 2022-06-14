@@ -1,0 +1,35 @@
+@import url(normalize.css); /* Import de normalize qui standardise l'apparence sur tous les navigateurs */
+
+/* Import des la police Roboto depuis google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Application du box-sizing à l'ensemble des éléments de la page pour travailler en pourcentage de mesure précis et ajustés */
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    padding-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blue;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
