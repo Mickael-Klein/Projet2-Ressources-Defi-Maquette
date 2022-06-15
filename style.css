@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 #banniere {
-    background-image: url(/assets/backgroung_image.jpg);
+    background-image: url(/Projet2-Ressources-Defi-Maquette/assets/backgroung_image.jpg);
     background-repeat: no-repeat;
     height: 80vh;
     display: flex;
@@ -135,8 +135,7 @@ h1 {
 
 footer {
     background-color: #5b359d;
-    width: 100vw;
-    min-height: 55vh;
+    min-height: 45vh;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -145,13 +144,14 @@ footer {
 #nom-entreprise {
     text-align: center;
     color: rgb(236, 233, 233);
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-weight: 500;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 #informations-generiques {
-    width: 100vw;
+    width: 95vw;  /* voir avec Paul Mentor OC car quand valeur à 100vw, les éléments dépassent les 100% de width du body */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -173,7 +173,7 @@ footer {
     color: whitesmoke;
 }
 #nav-footer ul li a:hover {
-    color: blue;
+    color: #779d35;
     text-decoration: underline;
 }
 
@@ -187,7 +187,7 @@ footer {
     color: whitesmoke
 }
 #a-propos ul li a:hover {
-    color: blue;
+    color: #779d35;
     text-decoration: underline;
 }
 
@@ -210,4 +210,40 @@ h3 {
 #logo-reseaux-sociaux {
     width: 100vw;
     height: 10vh;
+}
+
+#logo-reseaux-sociaux {
+    display: flex;
+    justify-content: space-between;
+    width: 18vw;
+    margin-bottom: 3vh;
+}
+
+#logo-reseaux-sociaux i {
+    color:rgb(179, 177, 177);
+}
+
+
+/*Ajout des Media Queries pour le responsive tablette*/
+@media(max-width: 991.98px) {
+    #banniere {
+        background-size: 100vw;
+        height: auto;
+    }
+
+    #grid {
+        width: 80vw;
+    }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media(max-width: 767.98px) {
+    nav ul {
+        flex-flow: column wrap;
+    }
+
+    #banniere {
+        background-size: 100vw;
+        height: auto;
+    }
 }
