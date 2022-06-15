@@ -10,6 +10,10 @@
     font-family: Roboto, Arial;
 }
 
+ul li a {
+    text-decoration: none;
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -42,7 +46,7 @@ nav ul li a:hover {
 }
 
 #banniere {
-    background-image: url(/Projet2-Ressources-Defi-Maquette/assets/backgroung_image.jpg);
+    background-image: url(/assets/backgroung_image.jpg);
     background-repeat: no-repeat;
     height: 80vh;
     display: flex;
@@ -163,21 +167,35 @@ footer {
 
 #nav-footer ul li {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
+}
+#nav-footer ul li a {
+    color: whitesmoke;
+}
+#nav-footer ul li a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 #a-propos {
     display: flex;
     flex-flow: column wrap;
     width: 20vw;
-    color: white;
+    color: whitesmoke;
+}
+#a-propos ul li a {
+    color: whitesmoke
+}
+#a-propos ul li a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 #coordonnees {
     display: flex;
     flex-flow: column wrap;
     width: 20vw;
-    color: white;
+    color: whitesmoke;
 }
 
 .coordonnees-p {
@@ -187,4 +205,9 @@ footer {
 
 h3 {
     color: rgb(179, 177, 177);
+}
+
+#logo-reseaux-sociaux {
+    width: 100vw;
+    height: 10vh;
 }
